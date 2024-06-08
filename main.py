@@ -22,7 +22,7 @@ def main():
             if combined_text.strip():
                 with st.spinner("Summarizing the text..."):
                     summary_text = summary.summarize_text(combined_text, api_key)
-                st.subheader("Summary")
+                st.subheader("Result:")
                 st.write(summary_text)
             else:
                 st.error("Failed to fetch content from the links.")
